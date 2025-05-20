@@ -1,11 +1,11 @@
 import { useReducer } from "react";
 
-function reducer(state, action) {
-  const initialState = {
-    count: 0,
-    step: 1,
-  };
+const initialState = {
+  count: 0,
+  step: 1,
+};
 
+function reducer(state, action) {
   switch (action.type) {
     case "dec":
       return { ...state, count: state.count - state.step };
